@@ -1,0 +1,7 @@
+<h1>I don't care it's ugly. It works!!!</h1>
+<h5 class="btn" style="background-color: orange" > <%= link_to "Post new flat", new_flat_path %></h5>
+<% @flats.each do |flat| %>
+  <h4><b><%= link_to flat.name, flat_path(flat) %></b></h4>
+  <p><%= flat.description %></p>
+<% end %>
+
